@@ -1,0 +1,4 @@
+#!/bin/bash
+DEVICE=`xinput list | grep bcm5974 | awk '{print $4}' | awk '{print substr($0, length($0) - 1, length($0))}'`
+xinput set-int-prop $DEVICE "Device Enabled" 8 0
+echo 'Trackpad disabled'
