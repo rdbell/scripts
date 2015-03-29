@@ -1,0 +1,4 @@
+#!/bin/bash
+amixer -c 0 set Master 2dB+ unmute
+amixer set Master unmute
+aplay /usr/share/sounds/volume-control/indicator.wav
