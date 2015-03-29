@@ -1,0 +1,4 @@
+#!/bin/bash
+xrandr --newmode "3840x2160_60.00"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync
+xrandr --addmode eDP1 3840x2160_60.00
+xrandr --output eDP1 --mode 3840x2160_60.00
