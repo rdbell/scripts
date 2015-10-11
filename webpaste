@@ -1,0 +1,13 @@
+#!/bin/bash
+function clearWc {
+    sleep 10 
+    echo "" > /var/www/html/webcopy
+} 
+
+echo "" > /var/www/html/webcopy
+while read line
+do
+    echo "$line" >> /var/www/html/webcopy
+done < "${1:-/dev/stdin}"
+
+clearWc &
